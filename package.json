@@ -1,0 +1,19 @@
+{
+  "name": "code-notes",
+  "version": "1.0.0",
+  "description": "This is a collection of code notes learned over time for various languages, TDD, etc. and serves as a good concise reference from time-to-time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeDoTDD/code-notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeDoTDD/code-notes/issues"
+  },
+  "homepage": "https://github.com/WeDoTDD/code-notes#readme"
+}
