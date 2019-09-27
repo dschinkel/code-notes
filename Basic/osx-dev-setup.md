@@ -94,9 +94,15 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
     - You should be able to open a terminal now and try it out by using `gst` (git status) in iTerm2 or OS X Terminal
         - For JetBrains products like intelliJ, do a command + , to get to preferences, type `terminal` in search, and then change your shell to use `/bin/zsh` instead of `/bin/bash`
             - if you're cd'd to a folder that contains a git repo locally, then you'll see the robbyrussell theme prompt look something like `➜  code-notes git:(master) ✗`
-### OS X Stuff
+### OS X
 - Enable AppleShowAllFiles - `defaults write com.apple.finder AppleShowAllFiles TRUE` then log out and back in and now you should see hidden files such as ~/.ssh, ~/.gradle, ~/Library,
 ~/.gitconfig, ~/.bash_history, /Users, /usr
+##### Creating a Macro to convert .HEIC files
+iPhone 10+ creates .HEIC files as their raw format.  You can't use those images in typical apps like OneNote, etc. so you need to convert those to jpg.
+There's no built-in way to do this in OSX but you can create your own macro to allow you to.
+
+- here's [how to do that](https://www.howtogeek.com/398927/how-to-convert-heic-images-to-jpg-on-a-mac-the-easy-way) .
+
 
 ## App Specific Setup / Maintenance
 
