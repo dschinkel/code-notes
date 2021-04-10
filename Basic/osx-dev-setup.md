@@ -69,6 +69,7 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
     - zsh is now part of OS X. But you still need to install oh-my-zsh
       - You always had to install zsh first then oh-my-zsh, just that now you don't have to install zsh, it's already in OS X
     - After you install it, the git plugin should just work
+    - make sure to switch shell to /bin/zsh in IntelliJ, iTerm, etc.
     
 ### OS X
 - Enable AppleShowAllFiles - `defaults write com.apple.finder AppleShowAllFiles TRUE` then log out and back in and now you should see hidden files such as ~/.ssh, ~/.gradle, ~/Library,
