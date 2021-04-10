@@ -12,7 +12,7 @@ my music collections
 See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for https, ssh, and other "stuff"
 ## Tools / Apps I Use
 - [keycastr](https://github.com/keycastr/keycastr) - Show keystrokes on screen as you type
-    - `brew cask install keycastr`
+    - `brew install --cask keycastr`
 - [spaces-renamer](https://github.com/dado3212/spaces-renamer) - allows you to rename your Mission Control Desktops
 - [chrome](https://www.google.com/chrome)
 - wget - `brew install wget`
@@ -21,7 +21,9 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
     - `cmd -`, `cmd +` to increase or decrease windows size fast
     - [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes)
         - `CMD+i` (⌘+i) - to get to preferences
+          - Color Presets Dropdown
         - Schemes I like: [Arthur](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Arthur.itermcolors)
+            - Click Raw.  Then right click the browser and save file.  Remove the txt.
 - [spectacle](https://github.com/eczarny/spectacle) - very useful for moving, maximizing, resizing, as well as it remembers size of windows really easy and fast
 - curl - `brew install curl`
 - [Homebrew](https://brew.sh)
@@ -29,8 +31,6 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
     - If you get this error:
         - `The Mac App Store version of 1Password won't work with a Homebrew-Cask-linked Google Chrome`
         - solve it by running `brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
-- [Homebrew-Cask](https://caskroom.github.io)
-    - `brew install caskroom/cask/brew-cask`
 - [Google Backup & Sync for Google Drive](https://www.google.com/drive/download/backup-and-sync/)
 - [Theine](https://itunes.apple.com/us/app/theine/id955848755?mt=12)
     - keeps your Mac awake. It prevents your Mac from falling asleep, dimming the screen
@@ -53,7 +53,6 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
 - [Slack Desktop](https://slack.com/downloads/osx)
 - [Discord](https://discordapp.com)
 - [OBS - Open Broadcaster Software](https://obsproject.com/) - for screencasts and streaming live
-- [keyCastr](https://github.com/keycastr/keycastr) - when I'm doing screencasts, it shows your keystrokes to the viewers
 - [Sublime Text](https://www.sublimetext.com/) - I use it as a scratch pad
 - [OneNote](https://www.onenote.com/download)
 - [Final Draft](https://www.finaldraft.com/)
@@ -67,33 +66,10 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
     - tool for converting video from nearly any format to a selection of modern, widely supported codecs
     - I think I also tried using this to fix OBS mp4 streams that got interrupted/incomplete by system crashes
 - [zsh - oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+    - zsh is now part of OS X. But you still need to install oh-my-zsh
+      - You always had to install zsh first then oh-my-zsh, just that now you don't have to install zsh, it's already in OS X
+    - After you install it, the git plugin should just work
     
-    **First Step is to install zsh itself**
-        
-     - In order for Oh-My-Zsh to work, Zsh must be installed
-        - If you want the latest and greatest, use Homebrew: `brew install zsh zsh-completions`
-    - run `zsh --version` to confirm it's installed and it's the latest
-    - set zsh to be your shell instead of bash: `chsh -s /bin/zsh`
-        - next check what shell your terminal is using by running `echo $SHELL`.  If it's set to bash it'll say `/bin/bash`.  What it should be set to is `/usr/bin/zsh`
-    - I usually copy down my [existing .zshrc](https://drive.google.com/open?id=1khpRuhdEQPUHgHGml49O1IbOmLmWLE21) which will be used (sourced) instead of .bashrc
-        - now move it to my user folder's root `mv ~/downloads/zshrc ~/`
-        - if you ever want to quickly create a new one, run `cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc`
-    - change this line in .zshrc with your computer's name so that OS X knows about your zsh installation: 
-        - `export ZSH=/Users/david.schinkel/.oh-my-zsh` - here it's david.schinkel but it will depend on whatever computer you are on
-    
-    **Last step is to install oh-my-zsh**
-    - Use curl:
-        - `sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
-        
-        or wget: `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-        
-    - double-check that this path works by cmd + shift + G and paste in the path for ZSH (e.g. `/Users/david.schinkel/.oh-my-zsh/oh-my-zsh.sh`) that you just specified and see if you can even get there in finder, proving it's a valid path
-    Open up terminal and type `zsh` and it'll either work or it won't.  If not, you might have your PATH for ZSH wrong
-        - See if you can get to it
-    - **oh my zsh Themes**: note that I'm using certain zsh theme so the command-line will look different than the default in whatever command-line tool you use.  For example in iTerm since I'm using the robbyrussell theme you'll see the prompt look like **`➜  ~`** now
-    - You should be able to open a terminal now and try it out by using `gst` (git status) in iTerm2 or OS X Terminal
-        - For JetBrains products like intelliJ, do a command + , to get to preferences, type `terminal` in search, and then change your shell to use `/bin/zsh` instead of `/bin/bash`
-            - if you're cd'd to a folder that contains a git repo locally, then you'll see the robbyrussell theme prompt look something like `➜  code-notes git:(master) ✗`
 ### OS X
 - Enable AppleShowAllFiles - `defaults write com.apple.finder AppleShowAllFiles TRUE` then log out and back in and now you should see hidden files such as ~/.ssh, ~/.gradle, ~/Library,
 ~/.gitconfig, ~/.bash_history, /Users, /usr
