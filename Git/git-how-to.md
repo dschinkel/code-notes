@@ -128,8 +128,48 @@ or
     - Manually
     - or easier, via command-line just run `git config --global credential.helper osxkeychain` which will prompt you for your next push to github, it'll prompt you for your username and password then saves it once you enter it
     
-#### Setting up SSH
-*First, generate a local ssh key:*
+### Setting up SSH
+####1)  First, generate a local ssh key
+- `ssh-keygen -t ed25519 -C "dschinkel@gmail.com"`
+    - This creates a new ssh key, using the provided email as a label
+    - When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+    - At the prompt, type a [secure passphrase](https://docs.github.com/en/github/authenticating-to-github/working-with-ssh-key-passphrases)
+    
+####2) Create a Secure Passphrase
+
+With SSH keys, if someone gains access to your computer, they also gain access to every system that uses that key. To add an extra layer of security, you can add a passphrase to your SSH key. You can use ssh-agent to securely save your passphrase so you don't have to reenter it.
+
+Create/Update a passphrase for your ssh key
+
+- `ssh-keygen -p -f ~/.ssh/id_ed25519`
+- Now save it to the OS X keychain
+    - On Mac OS X Leopard through OS X El Capitan, these default private key files are handled automatically:
+      - .ssh/id_rsa
+      - .ssh/identity
+    - The first time you use your key, you will be prompted to enter your passphrase. If you choose to save the passphrase with your keychain, you won't have to enter it again
+    - Otherwise, you can store your passphrase in the keychain when you add your key to the ssh-agent.
+
+####3) Add your key to the SSH Agent
+Before adding a new SSH key to the ssh-agent to manage your keys, you should have checked for existing SSH keys and generated a new SSH key
+
+When adding your SSH key to the agent, use the default macOS ssh-add command, and not an application installed by macports, homebrew, or some other external source
+  
+- **Start the ssh-agent in the background**: `eval "$(ssh-agent -s)"`
+- If you're using macOS Sierra 10.12.2 or later, you will need to modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain
+    - First, check to see if your ~/.ssh/config file exists in the default location: `open ~/.ssh/config`
+    - If the file doesn't exist, create the file: `touch ~/.ssh/config`
+- **Open your ~/.ssh/config file**, then modify the file to contain the following lines. If your SSH key file has a different name or path than the example code, modify the filename or path to match your current setup
+    - ```Host *
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/id_ed25519```
+      
+    - Note: If you chose not to add a passphrase to your key, you should omit the UseKeychain line.
+    
+- **Add your SSH private key to the ssh-agent and store your passphrase in the keychain**: `ssh-add -K ~/.ssh/id_ed25519`
+    -  If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_ed25519 in the command with the name of your private key file
+    
+- Finally, **Add the SSH key to your account on GitHub**
 
 # Errors & Resolutions
 
