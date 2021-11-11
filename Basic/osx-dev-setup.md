@@ -2,7 +2,8 @@
 # Music
 my music collections
 - [play lists](https://soundcloud.com/dave-schinkel/sets)
-- [play list: fav mixes](https://soundcloud.com/dave-schinkel/sets/fav-mixes) - the one I usually listen to the most
+- [play list: fav mixes](https://soundcloud.com/dave-schinkel/sets/best-mix) - the one I usually listen to the most
+- [favorites: soundstripe.com](https://app.soundstripe.com/my_media/favorites/music)
 
 ## Commands
 - `diskutil list` []( []() ) - lists out all your disk volumes, etc
@@ -10,10 +11,17 @@ my music collections
 
 ## Git Setup
 See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for https, ssh, and other "stuff"
+
+**[Updating Keychain with Git Password](https://help.github.com/articles/updating-credentials-from-the-osx-keychain)**
+
 ## Tools / Apps I Use
+I have created a custom **[PC bash script](/pc-setup.sh)** that runs a bunch of Brew commands to setup most of the stuff below (not all)
+
+- [yarn](https://yarnpkg.com/)
 - [keycastr](https://github.com/keycastr/keycastr) - Show keystrokes on screen as you type
     - `brew install --cask keycastr`
 - [spaces-renamer](https://github.com/dado3212/spaces-renamer) - allows you to rename your Mission Control Desktops
+- [brave](https://brave.com/)
 - [chrome](https://www.google.com/chrome)
 - wget - `brew install wget`
     - test it out: `cd ~/downloads | wget http://ftp.gnu.org/gnu/wget/wget-1.19.5.tar.gz`
@@ -32,11 +40,13 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
         - `The Mac App Store version of 1Password won't work with a Homebrew-Cask-linked Google Chrome`
         - solve it by running `brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 - [Google Backup & Sync for Google Drive](https://www.google.com/drive/download/backup-and-sync/)
+- [BlackHole](https://github.com/ExistentialAudio/BlackHole)
 - [Theine](https://itunes.apple.com/us/app/theine/id955848755?mt=12)
     - keeps your Mac awake. It prevents your Mac from falling asleep, dimming the screen
 - [WebStorm IDE](https://www.jetbrains.com/webstorm)
 - [IntelliJ IDE](https://www.jetbrains.com/idea/download)
     - [markdown navigator](https://plugins.jetbrains.com/plugin/7896-markdown-navigator) - plugin of choice (not free) for editing or viewing README files
+- [Clean My Mac](https://cleanmymac.macpaw.com)
 - [iStat menus](https://bjango.com/mac/istatmenus)
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/)
 - [Motion](https://itunes.apple.com/us/app/motion/id434290957?mt=12)
@@ -47,14 +57,14 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
     - Microsoft NTFS is one of the primary file systems of Windows. If you work on a Mac computer and want to read or write files from HDD, SSD or a flash drive formatted under Windows
 - [APFS for Windows](https://www.paragon-software.com/home/apfs-windows/)
     - Apple File System (APFS) is a new file system for macOS, iOS, and other Apple devices. Use this if you work on Windows computer and want to read APFS-formatted HDD, SSD or flash drive
-- [Clean My Mac](https://macpaw.com)
 - [AutoZapper](https://www.appzapper.com) - a great app uninstaller
 - [app cleaner](http://freemacsoft.net/appcleaner/) - good free alternative to AppZapper and also has a builtin app search which is real nice and you can remove built-in Mac apps
 - [Slack Desktop](https://slack.com/downloads/osx)
 - [Discord](https://discordapp.com)
 - [OBS - Open Broadcaster Software](https://obsproject.com/) - for screencasts and streaming live
-- [Sublime Text](https://www.sublimetext.com/) - I use it as a scratch pad
+- [Sublime Text](https://www.sublimetext.com) - I use it as a scratch pad
 - [OneNote](https://www.onenote.com/download)
+- [PgAdmin](https://www.pgadmin.org/download/pgadmin-4-macos)
 - [Final Draft](https://www.finaldraft.com/)
 - [Elgato Video Capture](https://www.elgato.com/en/video-capture) - for converting old vhs tapes to mp4
 - [VLC](https://www.videolan.org/vlc/download-macosx.html)
@@ -122,4 +132,4 @@ There's no built-in way to do this in OSX but you can create your own macro to a
     □ node --version
     ```
 
-**[Updating Keychain with Git Password](https://help.github.com/articles/updating-credentials-from-the-osx-keychain/)**
+
