@@ -95,9 +95,16 @@ Above works with a `.babelrc` setup like this:
 
 ![webstorm-setup-minimal](/images/mocha-setup-minimal.png)
 
-## Test Scripts (for running tests at command-line instead of GUI)
+### Test Scripts (for running tests at command-line instead of GUI)
 
-## Main Areas of WebStorm I Use
+### Color Schema
+I use the Material UI free plugin to make it look awesome
+
+I also use the atom icons plugin to improve the file and other icons even more
+
+**Note:** If you get a green background to a selected file in the project pane, just disable file backgrounds under Appearance & Behavior | File Colors.  Disable File colors.
+
+### Main Areas of WebStorm I Use
 WebStorm is overwhelming at first but if you can get over yourself on that, and learn some of the main parts that most devs will need at a very basic level you'll come to find that this IDE is amazing and kicks editors like Microsoft's VS Code in the ass in terms of productivity
 
 If you're new just focus on a few things, listed below and don't worry about trying to learn everything in WebStorm.

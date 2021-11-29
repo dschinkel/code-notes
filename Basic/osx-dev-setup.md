@@ -18,6 +18,7 @@ See [Git - How Tos](Git/code-efficiencies.md) which includes setting up Auth for
 I have created a custom **[PC bash script](/pc-setup.sh)** that runs a bunch of Brew commands to setup most of the stuff below (not all)
 
 - [yarn](https://yarnpkg.com/)
+- [giphy capture](https://giphy.com/apps/giphycapture)
 - [keycastr](https://github.com/keycastr/keycastr) - Show keystrokes on screen as you type
     - `brew install --cask keycastr`
 - [spaces-renamer](https://github.com/dado3212/spaces-renamer) - allows you to rename your Mission Control Desktops
