@@ -102,7 +102,7 @@ I use the Material UI free plugin to make it look awesome
 
 I also use the atom icons plugin to improve the file and other icons even more
 
-**Note:** If you get a green background to a selected file in the project pane, just disable file backgrounds under Appearance & Behavior | File Colors.  Disable File colors.
+**Note:** If you get a green background to a selected file in the project pane, just disable file backgrounds under `Appearance & Behavior` | `File Colors`.  Disable `File colors`.
 
 ### Main Areas of WebStorm I Use
 WebStorm is overwhelming at first but if you can get over yourself on that, and learn some of the main parts that most devs will need at a very basic level you'll come to find that this IDE is amazing and kicks editors like Microsoft's VS Code in the ass in terms of productivity
